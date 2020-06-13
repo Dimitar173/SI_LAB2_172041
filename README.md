@@ -36,8 +36,9 @@ ex = assertThrows(RuntimeException.class, () -> SILab2.function(new User("trajce
 
 //1,2, 3, 5, 7,8, 9, 11, 13,14, 15.1, 15.2, (16, 18, 20, 22, 15.3, 15.2), 23, 25, 26 // za ova nema //1,2, 3, 5, 7,8, 9, 11, 13,14, 15.1, 15.2, 23, 24, 26 //za ova nema //1,2, 3, 5, 7,8, 9, 11, 13,14, 15.1, 15.2, 23, 25, 26 //za ova nema //1,2, 3, 5, 7,8, 9, 11, 13,14, 15.1, 15.2, (16, 18, 20, 21, 22, 15.3, 15.2), 23, 25, 26 //za ova nema //1,2, 3, 5, 7,8, 9, 11, 13,14, 15.1, 15.2, (16, 18, 19, 20, 22, 15.3, 15.2), 23, 25, 26 //za ova nema //1,2, 3, 5, 7,8, 9, 11, 13,14, 15.1, 15.2, (16, 18, 19, 20, 21, 22, 15.3, 15.2), 23, 25, 26 //za ova nema //1,2, 3, 5, 7,8, 9, 11, 13,14, 15.1, 15.2, (16, 17, 18, 20, 21, 22, 15.3, 15.2), 23, 25, 26 //za ova nema //1,2, 3, 5, 7,8, 9, 11, 13,14, 15.1, 15.2, (16, 17, 18, 20, 22, 15.3, 15.2), 23, 25, 26 //za ova nema //1,2, 3, 5, 7,8, 9, 11, 13,14, 15.1, 15.2, (16, 17, 18, 19, 20, 22, 15.3, 15.2), 23, 25, 26 //za ova nema //1,2, 3, 5, 7,8, 9, 11, 13,14, 15.1, 15.2, (16, 17, 18, 19, 20, 21, 22, 15.3, 15.2), 23, 24, 26 //za ova nema
 ```
-```java
+
 ## Тест случаи за Every Branch критериумот :
+```java
 //vo ova testiranje treba da se izmine sekoja granka //1,2-3-4
 
 RuntimeException ex; ex = assertThrows(RuntimeException.class, () -> SILab2.function(null, createList("trajce", "goce", "sime"))); assertTrue(ex.getMessage().contains("The user is not instantiated"));
